@@ -16,7 +16,7 @@ Leading AI and search product initiatives for APM Music, a leading production mu
 - Led AI-powered search initiatives integrating natural language processing (NLP) and audio similarity technology, resulting in a 6% increase in conversion rates and 17% boost in content engagement across 20,000 monthly users
 - Partnered with AI vendors (including leading NLP and audio ML providers) to enhance search relevance, metadata enrichment, and personalization capabilities, improving search quality scores by 25%
 - Facilitated product team AI adoption by conducting regular training sessions throughout the year on using AI tools for product management work including prototyping, user stories, PRDs, competitive analysis, and market research
-- Led AI strategy discussions with C-suite executives to define product roadmap priorities, securing $500K+ in AI investment and aligning technical initiatives with business goals
+- Led AI strategy discussions with C-suite executives to define product roadmap priorities, securing investment in AI initiatives and aligning technical initiatives with business goals
 - Designed and launched audio similarity search feature, enabling users to find tracks "similar to" reference audio, increasing average session time by 12%
 - Implemented A/B testing framework for search features, running 20+ experiments to optimize ranking algorithms and UI/UX
 - Reduced search result latency by 40% through collaboration with engineering on query optimization and caching strategies
