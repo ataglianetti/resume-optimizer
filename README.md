@@ -69,11 +69,11 @@ When you find a job you want to apply for:
    - Extract key requirements, skills, and keywords
    - **Scan for application form essay questions** (if present)
    - Generate a **compact, 1-page** optimized markdown resume emphasizing relevant experience
-   - Save it to `optimized/YYYY-MM-DD_[Company]_[Role]_Resume.md`
-   - Create an ATS-friendly HTML version at `optimized/YYYY-MM-DD_[Company]_[Role]_Resume.html`
+   - Save files to `~/Desktop/` by default (or specify custom location with "save to [path]")
+   - Create both markdown and ATS-friendly HTML versions
    - **Generate pre-filled essay responses** (if questions were found)
-   - Save essay responses to `optimized/YYYY-MM-DD_[Company]_[Role]_Essay_Responses.md`
-   - Follow formatting rules from `.claude-instructions.md` (4 bullets per role, generous white space, scannable)
+   - Follow formatting rules from `.claude-instructions.md` (5-4-3 graduated bullets, generous white space, scannable)
+   - Confirm file locations with full paths
 
 4. **Review and adjust** the optimized version as needed
 
@@ -128,20 +128,24 @@ Claude Code will:
 
 ## Output Files
 
+**Default Location:** `~/Desktop/` (your desktop for easy access)
+**Custom Location:** Specify with "save to [path]" when requesting optimization
+**Fallback:** `./output/` if Desktop isn't accessible
+
 ### Optimized Markdown
-- Location: `optimized/YYYY-MM-DD_[Company]_[Role]_Resume.md`
+- Filename: `YYYY-MM-DD_[Company]_[Role]_Resume.md`
 - Purpose: Editable version you can review and adjust
 - Date-stamped for tracking application timeline
-- Obsidian-friendly for easy editing
+- Easy to edit in any text editor or Markdown viewer
 
 ### ATS-Friendly HTML
-- Location: `optimized/YYYY-MM-DD_[Company]_[Role]_Resume.html`
+- Filename: `YYYY-MM-DD_[Company]_[Role]_Resume.html`
 - Purpose: Final formatted version ready for submission
 - Compact styling with generous white space
 - Can be opened in browser and saved as PDF
 
 ### Essay Responses (if applicable)
-- Location: `optimized/YYYY-MM-DD_[Company]_[Role]_Essay_Responses.md`
+- Filename: `YYYY-MM-DD_[Company]_[Role]_Essay_Responses.md`
 - Purpose: Pre-filled responses to application form essay questions
 - Includes word counts for each response
 - Ready to copy/paste into application forms
