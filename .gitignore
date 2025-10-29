@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Obsidian/Claude
+.claude/
+
+# Output directories
+output/
+
+# Temporary files
+*.tmp
+*~
+
+# Archive directory (optional - remove this line if you want to track archived files)
+# archive/

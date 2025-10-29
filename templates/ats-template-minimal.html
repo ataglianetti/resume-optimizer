@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{NAME}} - Resume</title>
+    <style>
+        /* OPTION 1: MINIMAL & CLEAN */
+        /* Ultra-clean design with subtle typography hierarchy */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background: #ffffff;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.6in 0.75in;
+        }
+
+        /* Header - Name & Contact */
+        h1 {
+            font-size: 28pt;
+            font-weight: 300;
+            letter-spacing: -0.5pt;
+            margin-bottom: 6pt;
+            color: #000000;
+        }
+
+        .contact-info {
+            font-size: 9.5pt;
+            color: #444444;
+            margin-bottom: 20pt;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: #444444;
+            text-decoration: none;
+        }
+
+        /* Section Headers */
+        h2 {
+            font-size: 11pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1pt;
+            margin-top: 18pt;
+            margin-bottom: 10pt;
+            padding-bottom: 4pt;
+            border-bottom: 1px solid #e0e0e0;
+            color: #000000;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        /* Job Titles & Companies */
+        h3 {
+            font-size: 11pt;
+            font-weight: 600;
+            margin-top: 10pt;
+            margin-bottom: 2pt;
+            color: #000000;
+        }
+
+        .job-meta {
+            font-size: 9.5pt;
+            color: #666666;
+            font-style: italic;
+            margin-bottom: 6pt;
+        }
+
+        /* Professional Summary */
+        .summary {
+            margin-bottom: 4pt;
+            line-height: 1.6;
+        }
+
+        /* Bullet Points */
+        ul {
+            margin-left: 18pt;
+            margin-top: 4pt;
+            margin-bottom: 10pt;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 4pt;
+            line-height: 1.5;
+        }
+
+        /* Skills Section */
+        .skills-row {
+            margin-bottom: 6pt;
+        }
+
+        .skills-label {
+            font-weight: 600;
+            display: inline;
+        }
+
+        .skills-content {
+            display: inline;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 8pt;
+        }
+
+        .degree {
+            font-weight: 600;
+        }
+
+        .school-meta {
+            font-size: 9.5pt;
+            color: #666666;
+            font-style: italic;
+        }
+
+        /* Print Optimization */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0.6in 0.75in;
+            }
+        }
+
+        h2, h3 {
+            page-break-after: avoid;
+        }
+
+        .experience-item, .education-item {
+            page-break-inside: avoid;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{NAME}}</h1>
+
+    <div class="contact-info">
+        {{EMAIL}} • {{PHONE}} • {{LOCATION}}<br>
+        {{LINKEDIN}} • {{GITHUB}} • {{PORTFOLIO}}
+    </div>
+
+    <h2>Professional Summary</h2>
+    <p class="summary">{{SUMMARY}}</p>
+
+    <h2>Experience</h2>
+    {{EXPERIENCE}}
+
+    <h2>Education</h2>
+    {{EDUCATION}}
+
+    <h2>Skills</h2>
+    {{SKILLS}}
+
+    {{CERTIFICATIONS}}
+
+    {{PROJECTS}}
+</body>
+</html>
